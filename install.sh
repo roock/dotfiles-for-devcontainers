@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install ZSH syntax highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git"$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 # Install ZSH auto suggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 # Install Powerlevel 10k
