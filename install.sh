@@ -11,5 +11,11 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${HOME}/.oh-my
 ln -nfs "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 ln -nfs "$HOME/dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
 
+# properly set timezone
+# TODO: improve this to work on more linux distributions
+if [[ -f /usr/share/zoneinfo/Europe/Vienna ]]; then
+    ln -sf /usr/share/zoneinfo/Europe/Vienna /etc/localtime
+fi
+
 # Copy user gitconfig
 # cp ./.gitconfig ~
