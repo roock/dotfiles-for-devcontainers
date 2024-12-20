@@ -10,6 +10,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${HOME}/.oh-my
 # Create symlinks
 ln -nfs "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 ln -nfs "$HOME/dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
+ln -nfs "$HOME/dotfiles/.gitignore" "$HOME/.gitignore"
 
 # properly set timezone
 # TODO: improve this to work on more linux distributions
