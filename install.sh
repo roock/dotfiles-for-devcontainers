@@ -4,13 +4,16 @@
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 # Install ZSH auto suggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
-# Install Powerlevel 10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k"
+# Install starship
+./install-starship.sh
+
 
 # Create symlinks
+mkdir $HOME/.config
+ln -nfs "$HOME/dotfiles/starship.toml" "$HOME/.config/starship.tom"
 ln -nfs "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
-ln -nfs "$HOME/dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
 ln -nfs "$HOME/dotfiles/.gitignore" "$HOME/.gitignore"
+
 
 # properly set timezone
 # TODO: improve this to work on more linux distributions
