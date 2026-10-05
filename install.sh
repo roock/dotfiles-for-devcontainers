@@ -5,12 +5,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.oh-my
 # Install ZSH auto suggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 # Install starship
-./install-starship.sh
+./install-starship.sh --yes
 
 
 # Create symlinks
 mkdir $HOME/.config
-ln -nfs "$HOME/dotfiles/starship.toml" "$HOME/.config/starship.tom"
+ln -nfs "$HOME/dotfiles/starship.toml" "$HOME/.config/starship.toml"
 ln -nfs "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 ln -nfs "$HOME/dotfiles/.gitignore" "$HOME/.gitignore"
 
